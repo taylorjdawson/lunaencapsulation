@@ -11,7 +11,9 @@
 /* ==== overwrite bootstrap standard ==== */
 @import url('animate.css');
 
-
+ :root {
+	 --color: #7b2b96;
+ }
 
 body {
 	font-family:'Open Sans', Arial, sans-serif;
@@ -80,8 +82,8 @@ a:hover {
 
 .btn:hover {
 	color: #fff;
-	background-color: #d9ae6a;
-	border-color: #d9ae6a;
+	background-color: var(--color);
+	border-color: var(--color);
 	padding: 10px 20px;
 }
 	
@@ -98,7 +100,7 @@ a:hover {
 	padding-top:5px;
 	float: left;	
 	font-size: 24px;
-	color:#d9ae6a;	
+	color: var(--color);
 	text-transform:uppercase;
 	font-weight:900;
 }
@@ -153,7 +155,7 @@ a:hover {
 }
 
 .nav-tabs > li > a:hover {	
-	color: #d9ae6a;
+	color: var(--color);
 	border-color: #fff #fff #fff;
 	border-radius:0;
 	background-color:#fff; 
@@ -163,7 +165,7 @@ a:hover {
 	-o-transition: all 0.3s ease-in-out;
 }
 .nav-tabs > li > a.active {
-	color: #d9ae6a;
+	color: var(--color);
 	border-radius:0;
 	transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -209,7 +211,7 @@ a:hover {
 }
 
 #carousel-slider a i {
-	border: 1px solid #d9ae6a;
+	border: 1px solid var(--color);
 	border-radius:50%;
 	font-size: 28px;
 	height: 50px;
@@ -218,13 +220,13 @@ a:hover {
 	top: 50%;
 	width: 50px;
 	color:#fff;
-	background:#d9ae6a;
+	background:var(--color);
 }
 
 #carousel-slider a i:hover {
   background:#deae62;
   color:#fff;
-  border: 1px solid #d9ae6a;
+  border: 1px solid var(--color);
 }
 
 #carousel-slider 
@@ -342,19 +344,19 @@ a.accordion-toggle  i{
   margin-top: -10px;
   text-align: center;
   margin-right: -15px;
-  background: #d9ae6a;
+  background: var(--color);
   color:#fff;
   border-radius:4px;
 }
 
 .panel-heading.active a.accordion-toggle i{
-  background: #d9ae6a;
+  background: var(--color);
   color: #fff;
   border-radius:4px;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i{
-  background: #d9ae6a;
+  background: var(--color);
   color: #fff;
 }
 
@@ -449,7 +451,7 @@ a.accordion-toggle  i{
 	margin-bottom:30px;
 	color:#fff;
 	padding:50px;
-	background:#d9ae6a;
+	background:var(--color);
 	border-radius:50%;
 }
 
@@ -466,7 +468,7 @@ a.accordion-toggle  i{
 
 .hi-icon-effect i.fa:hover {
 	background:#fff;
-	color: #d9ae6a;
+	color: var(--color);
 	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
@@ -554,7 +556,8 @@ textarea#message{
 ============================ */
 footer {
 	padding: 50px 0 50px 0;
-	background:#dab273;
+	background:#7b2b96;
+
 }
 
 footer h4 {
@@ -566,9 +569,12 @@ footer h4 {
 }
 
 .contact-info {
-	color:#333;
+	color:#fff;
 }
 
+ .contact-info a {
+     color:#fff;
+ }
 .contact-info ul {
 	list-style:none;
 	padding-left: 0;
@@ -635,7 +641,7 @@ ul.social-network {
   -o-transition: all 0.3s ease-in-out;
 }
 .sub-footer  {
-	background:#d9ae6a;
+	background:var(--color);
 }
 
 ul.social-network li {
@@ -676,7 +682,7 @@ ul.social-network li a {
 .copyright {
 	/*margin-top:30px;*/
     /*font-size:10px;*/
-    color: #181818;
+    color: #fff;
 	font-size: .9rem;
 }
 
